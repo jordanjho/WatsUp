@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Watsup Framework - A social platform for college events and student connections">
+    <meta name="keywords" content="social media, college, events, student community">
+    <title>WatsUp</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav>
+        <div class="nav-left">
+            <img src="images/logo.png" class="logo" alt="Watsup Logo">
+            <ul>
+                <li><img src="images/notification.png" alt="Notifications"></li>
+                <li><img src="images/inbox.jpg" alt="Inbox"></li>
+                <li><img src="images/video.png" alt="Video"></li>
+            </ul>
+        </div>
+        <div class="nav-right">
+            <div class="search-box">
+                <img src="images/search.png" alt="Search Icon">
+                <input type="text" placeholder="Search">
+            </div>
+            <div class="nav-user-icon online">
+                <img src="images/profile-pic.png" alt="User Profile">
+            </div>
+        </div>
+    </nav>
+    
+    <div class="container">
+        <!-- Left Sidebar -->
+        <div class="left-sidebar">
+            <div class="imp-links">
+                <a href="#" ><img src="images/news.png" alt="Latest News">Latest News</a>
+                <a href="#" ><img src="images/friends.png" alt="Friends">Friends</a>
+                <a href="#" ><img src="images/group.png" alt="Group">Group</a>
+                <a href="#" ><img src="images/watch.png" alt="Watch">Watch</a>
+                <a href="#">See More</a>
+            </div>
+            <div class="shortcut-links">
+                <p>Your Shortcut</p>
+                <a href="#"> <img src="images/shortcut-1.jpg" alt="Activities">Activities</a>
+                <a href="#"> <img src="images/shortcut-2.jpg" alt="Sports">Sports</a>
+                <a href="#"> <img src="images/shortcut-3.png" alt="Clubs">Clubs</a>
+                <a href="#"> <img src="images/shortcut-4.jpg" alt="Academics">Academics</a>
+            </div>
+        </div>
+        
+        <!-- Main Content -->
+        <div class="main-content">
+            <div id="post-form">
+                <h2>Create a Post</h2>
+                <form id="new-post-form">
+                    <label for="post-title">Post Title</label>
+                    <input type="text" id="post-title" placeholder="Post Title" required>
+                    
+                    <label for="post-content">Write something...</label>
+                    <textarea id="post-content" placeholder="Write something..." rows="4" required></textarea>
+                    <button type="submit">Post</button>
+                </form>
+            </div>
+            <div id="posts">
+                <!-- User-generated posts will appear here -->
+            </div>
+        </div>
+        
+        <!-- Right Sidebar -->
+        <div class="right-sidebar">
+            <div class="sidebar-title">
+                <h4>Events</h4>
+                <a href="#">See All</a>
+            </div>
+
+            <div class="event">
+                <div class="left-event">
+                    <h3>18</h3>
+                    <span>March</span>
+                </div>
+                <div class="right-event">
+                    <h4>Scavenger Hunt</h4>
+                    <p>M3 Green</p>
+                    <a href="#">More Info</a>
+                </div>
+            </div>
+            <div class="event">
+                <div class="left-event">
+                    <h3>22</h3>
+                    <span>June</span>
+                </div>
+                <div class="right-event">
+                    <h4>Bake Sale</h4>
+                    <p>Student Life Center</p>
+                    <a href="#">More Info</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
